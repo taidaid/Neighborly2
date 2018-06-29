@@ -1,0 +1,8 @@
+Notes for Neighborly
+====================
+
+-Align "<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>" so that the buttons are always vertically aligned regardless of text above ----- Perhaps set it in a separate div that is aligned to be a row below 
+
+-Fit images, not stretch
+
+-Provide a signup form in an alert or on separate page
