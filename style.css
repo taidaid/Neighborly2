@@ -25,7 +25,7 @@ body {
 .carousel-caption h1 {
 	font-family: 'Pacifico', cursive;
 	padding-bottom: 10%;
-	font-size: 6em;
+	font-size: 3em;
 	text-shadow:
      3px 3px 5px #000,
      -1px -1px 5px #000,  
@@ -89,6 +89,38 @@ body {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
+@media (min-width: 20em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-shadow:
+     1px 1px 1px #000,
+     -1px -1px 1px #000,  
+     1px -1px 1px #000,
+     -1px 1px 1px #000,
+      1px 1px 1px #000;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  .carousel-caption h1 {
+    margin-bottom: 1.25rem;
+    font-size: 4rem;
+    line-height: 1.4;
+    text-shadow:
+     1px 1px 1px #000,
+     -1px -1px 1px #000,  
+     1px -1px 1px #000,
+     -1px 1px 1px #000,
+      1px 1px 1px #000;
+  }
+
+}
+
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
   .carousel-caption p {
@@ -103,17 +135,45 @@ body {
       1px 1px 1px #000;
   }
 
-  
-
   .featurette-heading {
     font-size: 50px;
   }
-}
 
-@media (min-width: @screen-sm-min) {
   .carousel-caption h1 {
     margin-bottom: 1.25rem;
-    font-size: 1rem;
+    font-size: 5.5rem;
+    line-height: 1.4;
+    text-shadow:
+     1px 1px 1px #000,
+     -1px -1px 1px #000,  
+     1px -1px 1px #000,
+     -1px 1px 1px #000,
+      1px 1px 1px #000;
+  }
+
+}
+
+@media (min-width: 50em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    text-shadow:
+     1px 1px 1px #000,
+     -1px -1px 1px #000,  
+     1px -1px 1px #000,
+     -1px 1px 1px #000,
+      1px 1px 1px #000;
+  }
+
+  .featurette-heading {
+    font-size: 60px;
+  }
+
+  .carousel-caption h1 {
+    margin-bottom: 1.25rem;
+    font-size: 5.5rem;
     line-height: 1.4;
     text-shadow:
      1px 1px 1px #000,
@@ -124,8 +184,20 @@ body {
   }
 }
 
+
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+  .carousel-caption h1 {
+    margin-bottom: 1.25rem;
+    font-size: 7rem;
+    line-height: 1.4;
+    text-shadow:
+     1px 1px 1px #000,
+     -1px -1px 1px #000,  
+     1px -1px 1px #000,
+     -1px 1px 1px #000,
+      1px 1px 1px #000;
   }
 }
