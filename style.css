@@ -103,8 +103,24 @@ body {
       1px 1px 1px #000;
   }
 
+  
+
   .featurette-heading {
     font-size: 50px;
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  .carousel-caption h1 {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-shadow:
+     1px 1px 1px #000,
+     -1px -1px 1px #000,  
+     1px -1px 1px #000,
+     -1px 1px 1px #000,
+      1px 1px 1px #000;
   }
 }
 
