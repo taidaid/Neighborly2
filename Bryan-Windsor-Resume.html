@@ -1,0 +1,224 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Resume</title>
+  <meta name="description" content="Bryan Windsor's Resume">
+  <meta name="author" content="Bryan Windsor">
+
+  <style>
+      body {margin: 0 auto }
+      div {display: flex; flex-direction: column; border: black;}
+      /* div {display: flex; flex-direction: column; border: black; border-style: solid; border-width: 1px;} */
+      .wrapper {flex-direction: column}
+      .top {color: white}
+        .top h3 {color: goldenrod; margin-bottom: .1em; margin-top: .5em; padding-bottom: .1em;}
+        .top h1 {margin-bottom: .1em; padding-bottom: .1em}
+      .summary {flex-direction: row; background-color: #933157}
+        .summary .rightCol {align-content: flex-end}
+      .leftCol {flex-direction: column; flex-grow: 1; margin-left: 1em; flex-wrap: wrap; flex-basis: 0}
+      .rightCol {flex-direction: column; flex-grow: 1; margin-left: 1em; flex-wrap: wrap; flex-basis: 0}
+      .contact {flex-direction: row; justify-content: left; background-color: #940039; padding-top: 1em; padding-bottom: 1em }
+        .contact p {padding-top: .25em; padding-block-end: .25em}
+        .contact img {height: 30px; width: 30px}
+      .contactElement {flex-flow: row nowrap}
+      .summary img {align-self: center; border-radius: 50%; padding-block-end: 1em}
+      .bottom {flex-direction: row; align-content: space-around; flex-grow: 1; background-color: #f0ead6; padding-bottom: 1em}
+      .skills {flex-direction: row; flex-wrap: wrap}
+        .skills p {background-color: goldenrod; border-radius: 10%; padding: .25em .25em .25em .25em; margin: .1em .25em .1em .25em}
+      .softSkills {flex-direction: row; flex-wrap: wrap}
+        .softSkills p {background-color: goldenrod; border-radius: 10%; padding: .25em .25em .25em .25em; margin: .1em .25em .1em .25em}
+      .sectionHeader {color: darkgoldenrod; text-decoration: underline}
+      .title, .company {margin-bottom: 0;}
+      .dateLocation {margin-top: 0; margin-bottom: 0; font-style: italic; color: darkgoldenrod}
+      h2.sectionHeader {margin-bottom: .5em}
+      h3 {margin: 0 0 0 0 }
+      ul { display: flex; flex-direction: column; flex-wrap: wrap; margin: 0 0 0 0 }
+      li {margin-top: 0; margin-bottom: 0}
+      p {margin-top: 0; margin-bottom: 0}
+      .educationItem {margin: .25em 0 1em 0}
+  </style>
+
+</head>
+
+<body>
+    <div class='wrapper'>
+        <div class='top'>
+            <div class="summary">
+                <div class='leftCol'>
+                    <h1>Bryan Windsor</h1>
+                    <h3>IT Manager</h3>
+                    <P>Passionate problem-solver with years of experience in leadership, technology, education, and Chinese.</P>
+                </div>
+                <div class='rightCol'>
+                    <img alt='Bryan Windsor' src='https://i.imgur.com/k745bTxt.jpg'/>
+                </div>
+            </div>
+            <div class="contact">
+                <div class='leftCol'>
+                    <div class='contactElement'><img alt='email' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIgogICAgIHZpZXdCb3g9IjAgMCAyNCAyNCIKICAgICBzdHlsZT0iZmlsbDojMDAwMDAwOyI+ICAgIDxwYXRoIGQ9Ik0gNCA0IEMgMi45NzYgNCAyLjE0MDQzNzUgNC43NzI2MjUgMi4wMjM0Mzc1IDUuNzY1NjI1IEwgMTIgMTIgTCAyMS45NzY1NjIgNS43NjU2MjUgQyAyMS44NTk1NjMgNC43NzI2MjUgMjEuMDI0IDQgMjAgNCBMIDQgNCB6IE0gMiA3Ljc1MTk1MzEgTCAyIDE4IEMgMiAxOS4xMDUgMi44OTUgMjAgNCAyMCBMIDIwIDIwIEMgMjEuMTA1IDIwIDIyIDE5LjEwNSAyMiAxOCBMIDIyIDcuNzUxOTUzMSBMIDEyLjUyOTI5NyAxMy42Njk5MjIgQyAxMi4yMDUyOTcgMTMuODcxOTIyIDExLjc5NDcwMyAxMy44NzE5MjIgMTEuNDcwNzAzIDEzLjY2OTkyMiBMIDIgNy43NTE5NTMxIHoiPjwvcGF0aD48L3N2Zz4=' />
+                         <p>windsor.bryan@gmail.com</p></div>
+                    <div class='contactElement'><img alt='Home' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIgogICAgIHZpZXdCb3g9IjAgMCAyNCAyNCIKICAgICBzdHlsZT0iZmlsbDojMDAwMDAwOyI+ICAgIDxwYXRoIGQ9Ik0gMTIgMiBBIDEgMSAwIDAgMCAxMS4yODkwNjIgMi4yOTY4NzUgTCAxLjIwMzEyNSAxMS4wOTc2NTYgQSAwLjUgMC41IDAgMCAwIDEgMTEuNSBBIDAuNSAwLjUgMCAwIDAgMS41IDEyIEwgNCAxMiBMIDQgMjAgQyA0IDIwLjU1MiA0LjQ0OCAyMSA1IDIxIEwgOCAyMSBDIDguNTUyIDIxIDkgMjAuNTUyIDkgMjAgTCA5IDE0IEwgMTUgMTQgTCAxNSAyMCBDIDE1IDIwLjU1MiAxNS40NDggMjEgMTYgMjEgTCAxOSAyMSBDIDE5LjU1MiAyMSAyMCAyMC41NTIgMjAgMjAgTCAyMCAxMiBMIDIyLjUgMTIgQSAwLjUgMC41IDAgMCAwIDIzIDExLjUgQSAwLjUgMC41IDAgMCAwIDIyLjc5Njg3NSAxMS4wOTc2NTYgTCAxOSA3Ljc4NTE1NjIgTCAxOSA1IEMgMTkgNC40NDggMTguNTUyIDQgMTggNCBDIDE3LjQ0OCA0IDE3IDQuNDQ4IDE3IDUgTCAxNyA2LjAzOTA2MjUgTCAxMi43MTY3OTcgMi4zMDI3MzQ0IEEgMSAxIDAgMCAwIDEyLjcxMDkzOCAyLjI5Njg3NSBBIDEgMSAwIDAgMCAxMiAyIHoiPjwvcGF0aD48L3N2Zz4=' />
+                         <p>Utrecht, The Netherlands</p></div>
+                    <div class='contactElement'><img alt='LinkedIn' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIgogICAgIHZpZXdCb3g9IjAgMCAyNiAyNiIKICAgICBzdHlsZT0iZmlsbDojMDAwMDAwOyI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBzdHlsZT0iICIgZD0iTSAyMS4xMjUgMCBMIDQuODc1IDAgQyAyLjE4MzU5NCAwIDAgMi4xODM1OTQgMCA0Ljg3NSBMIDAgMjEuMTI1IEMgMCAyMy44MTY0MDYgMi4xODM1OTQgMjYgNC44NzUgMjYgTCAyMS4xMjUgMjYgQyAyMy44MTY0MDYgMjYgMjYgMjMuODE2NDA2IDI2IDIxLjEyNSBMIDI2IDQuODc1IEMgMjYgMi4xODM1OTQgMjMuODE2NDA2IDAgMjEuMTI1IDAgWiBNIDguMDM5MDYzIDIyLjA3MDMxMyBMIDQgMjIuMDcwMzEzIEwgMy45NzY1NjMgOS45NzY1NjMgTCA4LjAxNTYyNSA5Ljk3NjU2MyBaIE0gNS45MTc5NjkgOC4zOTQ1MzEgTCA1Ljg5NDUzMSA4LjM5NDUzMSBDIDQuNTc0MjE5IDguMzk0NTMxIDMuNzIyNjU2IDcuNDg0Mzc1IDMuNzIyNjU2IDYuMzUxNTYzIEMgMy43MjI2NTYgNS4xOTE0MDYgNC42MDE1NjMgNC4zMTI1IDUuOTQ1MzEzIDQuMzEyNSBDIDcuMjg5MDYzIDQuMzEyNSA4LjExMzI4MSA1LjE5MTQwNiA4LjE0MDYyNSA2LjM1MTU2MyBDIDguMTQwNjI1IDcuNDg0Mzc1IDcuMjg1MTU2IDguMzk0NTMxIDUuOTE3OTY5IDguMzk0NTMxIFogTSAyMi4wNDI5NjkgMjIuMDcwMzEzIEwgMTcuOTY4NzUgMjIuMDcwMzEzIEwgMTcuOTY4NzUgMTUuNSBDIDE3Ljk2ODc1IDEzLjkxMDE1NiAxNy41NDY4NzUgMTIuODI4MTI1IDE2LjEyNSAxMi44MjgxMjUgQyAxNS4wMzkwNjMgMTIuODI4MTI1IDE0LjQ1MzEyNSAxMy41NTg1OTQgMTQuMTcxODc1IDE0LjI2NTYyNSBDIDE0LjA2NjQwNiAxNC41MTk1MzEgMTQuMDM5MDYzIDE0Ljg2NzE4OCAxNC4wMzkwNjMgMTUuMjIyNjU2IEwgMTQuMDM5MDYzIDIyLjA3MDMxMyBMIDkuOTQ1MzEzIDIyLjA3MDMxMyBMIDkuOTIxODc1IDkuOTc2NTYzIEwgMTQuMDE1NjI1IDkuOTc2NTYzIEwgMTQuMDM5MDYzIDExLjY4MzU5NCBDIDE0LjU2MjUgMTAuODc1IDE1LjQzMzU5NCA5LjczMDQ2OSAxNy41MTk1MzEgOS43MzA0NjkgQyAyMC4xMDU0NjkgOS43MzA0NjkgMjIuMDM5MDYzIDExLjQxNzk2OSAyMi4wMzkwNjMgMTUuMDQ2ODc1IEwgMjIuMDM5MDYzIDIyLjA3MDMxMyBaICI+PC9wYXRoPjwvZz48L3N2Zz4=' />
+                         <p>linkedin.com/in/bryanwindsor/</p></div>
+                </div>
+                <div class='rightCol'>
+                    <div class='contactElement'><img alt='Skype' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIgogICAgIHZpZXdCb3g9IjAgMCAyNiAyNiIKICAgICBzdHlsZT0iZmlsbDojMDAwMDAwOyI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBzdHlsZT0iICIgZD0iTSAyNS4wODk4NDQgMTUuNzE0ODQ0IEMgMjUuMjc3MzQ0IDE0Ljg4MjgxMyAyNS4zNzEwOTQgMTQuMDE5NTMxIDI1LjM3MTA5NCAxMy4xMzI4MTMgQyAyNS4zNzEwOTQgNi41IDE5Ljg5NDUzMSAxLjEyMTA5NCAxMy4xMzY3MTkgMS4xMjEwOTQgQyAxMi40MjU3ODEgMS4xMjEwOTQgMTEuNzI2NTYzIDEuMTgzNTk0IDExLjA0Mjk2OSAxLjI5Njg3NSBDIDkuOTQ5MjE5IDAuNjIxMDk0IDguNjU2MjUgMC4yMzA0NjkgNy4yNjk1MzEgMC4yMzA0NjkgQyAzLjM1MTU2MyAwLjIzMDQ2OSAwLjE3NTc4MSAzLjM0NzY1NiAwLjE3NTc4MSA3LjE5NTMxMyBDIDAuMTc1NzgxIDguNDgwNDY5IDAuNTI3MzQ0IDkuNjgzNTk0IDEuMTUyMzQ0IDEwLjcxODc1IEMgMC45ODgyODEgMTEuNSAwLjkwMjM0NCAxMi4zMDg1OTQgMC45MDIzNDQgMTMuMTMyODEzIEMgMC45MDIzNDQgMTkuNzY5NTMxIDYuMzc4OTA2IDI1LjE0ODQzOCAxMy4xMzY3MTkgMjUuMTQ4NDM4IEMgMTMuOTAyMzQ0IDI1LjE0ODQzOCAxNC42NTIzNDQgMjUuMDc4MTI1IDE1LjM3ODkwNiAyNC45NDUzMTMgQyAxNi4zNzUgMjUuNDcyNjU2IDE3LjUxOTUzMSAyNS43NzM0MzggMTguNzM0Mzc1IDI1Ljc3MzQzOCBDIDIyLjY1MjM0NCAyNS43NzM0MzggMjUuODI4MTI1IDIyLjY1NjI1IDI1LjgyODEyNSAxOC44MDg1OTQgQyAyNS44MjQyMTkgMTcuNjk1MzEzIDI1LjU2MjUgMTYuNjQ0NTMxIDI1LjA4OTg0NCAxNS43MTQ4NDQgWiBNIDE5LjQxMDE1NiAxOC44NzUgQyAxOC44NDc2NTYgMTkuNjYwMTU2IDE4LjAxMTcxOSAyMC4yODUxNTYgMTYuOTI1NzgxIDIwLjcyNjU2MyBDIDE1Ljg1NTQ2OSAyMS4xNjQwNjMgMTQuNTY2NDA2IDIxLjM4NjcxOSAxMy4xMDU0NjkgMjEuMzg2NzE5IEMgMTEuMzQ3NjU2IDIxLjM4NjcxOSA5Ljg3MTA5NCAyMS4wODU5MzggOC43MjI2NTYgMjAuNDg0Mzc1IEMgNy45MDIzNDQgMjAuMDUwNzgxIDcuMjIyNjU2IDE5LjQ1NzAzMSA2LjcxMDkzOCAxOC43MzA0NjkgQyA2LjE4NzUgMTcuOTk2MDk0IDUuOTI1NzgxIDE3LjI2NTYyNSA1LjkyNTc4MSAxNi41NTg1OTQgQyA1LjkyNTc4MSAxNi4xMjEwOTQgNi4wOTc2NTYgMTUuNzM4MjgxIDYuNDMzNTk0IDE1LjQyNTc4MSBDIDYuNzY5NTMxIDE1LjExMzI4MSA3LjE5OTIxOSAxNC45NjA5MzggNy43MTA5MzggMTQuOTYwOTM4IEMgOC4xMzI4MTMgMTQuOTYwOTM4IDguNDkyMTg4IDE1LjA4MjAzMSA4Ljc4OTA2MyAxNS4zMjQyMTkgQyA5LjA3MDMxMyAxNS41NTg1OTQgOS4zMTI1IDE1LjkwNjI1IDkuNTA3ODEzIDE2LjM1NTQ2OSBDIDkuNzIyNjU2IDE2Ljg0Mzc1IDkuOTYwOTM4IDE3LjI1MzkwNiAxMC4yMTA5MzggMTcuNTc4MTI1IEMgMTAuNDQ5MjE5IDE3Ljg5MDYyNSAxMC43OTY4NzUgMTguMTUyMzQ0IDExLjIzNDM3NSAxOC4zNTU0NjkgQyAxMS42Nzk2ODggMTguNTYyNSAxMi4yNzczNDQgMTguNjY3OTY5IDEzLjAxMTcxOSAxOC42Njc5NjkgQyAxNC4wMjM0MzggMTguNjY3OTY5IDE0Ljg1MTU2MyAxOC40NTcwMzEgMTUuNDc2NTYzIDE4LjAzOTA2MyBDIDE2LjA4NTkzOCAxNy42MzI4MTMgMTYuMzgyODEzIDE3LjE0MDYyNSAxNi4zODI4MTMgMTYuNTM5MDYzIEMgMTYuMzgyODEzIDE2LjA2MjUgMTYuMjI2NTYzIDE1LjY5MTQwNiAxNS45MTAxNTYgMTUuMzk4NDM4IEMgMTUuNTc4MTI1IDE1LjA5Mzc1IDE1LjEzNjcxOSAxNC44NTU0NjkgMTQuNjA1NDY5IDE0LjY5MTQwNiBDIDE0LjA0Njg3NSAxNC41MjM0MzggMTMuMjg5MDYzIDE0LjMzOTg0NCAxMi4zNTkzNzUgMTQuMTQ0NTMxIEMgMTEuMDg5ODQ0IDEzLjg3ODkwNiAxMC4wMTE3MTkgMTMuNTYyNSA5LjE1MjM0NCAxMy4yMDMxMjUgQyA4LjI3MzQzOCAxMi44Mzk4NDQgNy41NjY0MDYgMTIuMzI4MTI1IDcuMDUwNzgxIDExLjY5NTMxMyBDIDYuNTIzNDM4IDExLjA1MDc4MSA2LjI2MTcxOSAxMC4yMzgyODEgNi4yNjE3MTkgOS4yODUxNTYgQyA2LjI2MTcxOSA4LjM3ODkwNiA2LjUzOTA2MyA3LjU1ODU5NCA3LjA5Mzc1IDYuODU1NDY5IEMgNy42MzY3MTkgNi4xNTYyNSA4LjQzNzUgNS42MDkzNzUgOS40Njg3NSA1LjIzNDM3NSBDIDEwLjQ4MDQ2OSA0Ljg2NzE4OCAxMS42OTE0MDYgNC42Nzk2ODggMTMuMDU0Njg4IDQuNjc5Njg4IEMgMTQuMTQ4NDM4IDQuNjc5Njg4IDE1LjEwOTM3NSA0LjgwNDY4OCAxNS45MTAxNTYgNS4wNTA3ODEgQyAxNi43MTg3NSA1LjI5Njg3NSAxNy4zOTg0MzggNS42Mjg5MDYgMTcuOTMzNTk0IDYuMDM5MDYzIEMgMTguNDcyNjU2IDYuNDUzMTI1IDE4Ljg3MTA5NCA2Ljg5NDUzMSAxOS4xMjEwOTQgNy4zNTE1NjMgQyAxOS4zNzUgNy44MTY0MDYgMTkuNTAzOTA2IDguMjc3MzQ0IDE5LjUwMzkwNiA4LjcyMjY1NiBDIDE5LjUwMzkwNiA5LjE1MjM0NCAxOS4zMzU5MzggOS41MzkwNjMgMTkuMDAzOTA2IDkuODgyODEzIEMgMTguNjY3OTY5IDEwLjIyMjY1NiAxOC4yNDIxODggMTAuMzk0NTMxIDE3Ljc0NjA5NCAxMC4zOTQ1MzEgQyAxNy4yOTI5NjkgMTAuMzk0NTMxIDE2LjkzNzUgMTAuMjg5MDYzIDE2LjY5MTQwNiAxMC4wNzQyMTkgQyAxNi40NjA5MzggOS44NzUgMTYuMjIyNjU2IDkuNTY2NDA2IDE1Ljk2MDkzOCA5LjEyMTA5NCBDIDE1LjY1NjI1IDguNTUwNzgxIDE1LjI4NTE1NiA4LjEwMTU2MyAxNC44NjMyODEgNy43ODUxNTYgQyAxNC40NTMxMjUgNy40ODA0NjkgMTMuNzYxNzE5IDcuMzI0MjE5IDEyLjgyMDMxMyA3LjMyNDIxOSBDIDExLjk0MTQwNiA3LjMyNDIxOSAxMS4yMzA0NjkgNy40OTYwOTQgMTAuNjk5MjE5IDcuODM1OTM4IEMgMTAuMTg3NSA4LjE2NDA2MyA5Ljk0MTQwNiA4LjU0Mjk2OSA5Ljk0MTQwNiA4Ljk4ODI4MSBDIDkuOTQxNDA2IDkuMjYxNzE5IDEwLjAxOTUzMSA5LjQ5MjE4OCAxMC4xODM1OTQgOS42ODc1IEMgMTAuMzU5Mzc1IDkuODk0NTMxIDEwLjYwNTQ2OSAxMC4wNzgxMjUgMTAuOTE0MDYzIDEwLjIzMDQ2OSBDIDExLjIzODI4MSAxMC4zOTA2MjUgMTEuNTY2NDA2IDEwLjUxNTYyNSAxMS44OTg0MzggMTAuNjA1NDY5IEMgMTIuMjM4MjgxIDEwLjY5OTIxOSAxMi44MDg1OTQgMTAuODM1OTM4IDEzLjU5Mzc1IDExLjAxNTYyNSBDIDE0LjU4MjAzMSAxMS4yMjI2NTYgMTUuNDkyMTg4IDExLjQ1MzEyNSAxNi4yOTY4NzUgMTEuNzA3MDMxIEMgMTcuMTA5Mzc1IDExLjk2NDg0NCAxNy44MTY0MDYgMTIuMjc3MzQ0IDE4LjM5MDYyNSAxMi42NDQ1MzEgQyAxOC45NzY1NjMgMTMuMDE5NTMxIDE5LjQ0MTQwNiAxMy41IDE5Ljc2OTUzMSAxNC4wNzQyMTkgQyAyMC4xMDE1NjMgMTQuNjUyMzQ0IDIwLjI2NTYyNSAxNS4zNjMyODEgMjAuMjY1NjI1IDE2LjE5MTQwNiBDIDIwLjI2OTUzMSAxNy4xODM1OTQgMTkuOTgwNDY5IDE4LjA4NTkzOCAxOS40MTAxNTYgMTguODc1IFogIj48L3BhdGg+PC9nPjwvc3ZnPg==' />
+                         <p>windsor.bryan</p></div>
+                    <div class='contactElement'><img alt='Twitter' src='data:image/png;base64,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' /> 
+                        <p>Twitter</p></div>
+                    <div class='contactElement'><img alt='Phone' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIgogICAgIHZpZXdCb3g9IjAgMCAyNCAyNCIKICAgICBzdHlsZT0iZmlsbDojMDAwMDAwOyI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBzdHlsZT0iICIgZD0iTSA4IDIuMzk4NDM4IEMgOC4xMDE1NjMgMi4zOTg0MzggOC4xMDE1NjMgMi4zOTg0MzggOC4xOTkyMTkgMi41IEMgOC4zMDA3ODEgMi42MDE1NjMgOC42MDE1NjMgMi44OTg0MzggOC42MDE1NjMgMy4xMDE1NjMgQyA4LjYwMTU2MyAzLjMwMDc4MSA4LjYwMTU2MyAzLjgwMDc4MSA4LjY5OTIxOSA0LjE5OTIxOSBDIDguODk4NDM4IDQuNjk5MjE5IDkuMTAxNTYzIDYgOS4zOTg0MzggNi42OTkyMTkgQyA5LjY5OTIxOSA3LjM5ODQzOCA5LjgwMDc4MSA3LjgwMDc4MSA5LjUgOC4xOTkyMTkgQyA5LjE5OTIxOSA4LjY5OTIxOSA3LjMwMDc4MSAxMC42MDE1NjMgNy4zMDA3ODEgMTAuNjAxNTYzIEMgNy4zMDA3ODEgMTAuNjAxNTYzIDcuODAwNzgxIDExLjYwMTU2MyA4LjM5ODQzOCAxMi4xOTkyMTkgQyA4Ljg5ODQzOCAxMi44OTg0MzggOS42OTkyMTkgMTMuODk4NDM4IDEwLjY5OTIxOSAxNC42OTkyMTkgQyAxMS42OTkyMTkgMTUuNjAxNTYzIDEyLjgwMDc4MSAxNi4zOTg0MzggMTMuODk4NDM4IDE2Ljg5ODQzOCBDIDE1IDE1LjgwMDc4MSAxNS44OTg0MzggMTQuODk4NDM4IDE2LjE5OTIxOSAxNC42OTkyMTkgQyAxNi41IDE0LjUgMTYuNSAxNC4zOTg0MzggMTcgMTQuNjAxNTYzIEMgMTcuNSAxNC44MDA3ODEgMTguMTk5MjE5IDE1LjEwMTU2MyAxOSAxNS4xOTkyMTkgQyAxOS42OTkyMTkgMTUuMzAwNzgxIDIwLjUgMTUuMzk4NDM4IDIxIDE1LjUgQyAyMS41IDE1LjYwMTU2MyAyMS41IDE1LjYwMTU2MyAyMS42MDE1NjMgMTUuODAwNzgxIEMgMjEuODAwNzgxIDE2IDIxLjg5ODQzOCAxNi4zMDA3ODEgMjEuODk4NDM4IDE2LjM5ODQzOCBDIDIxLjg5ODQzOCAxNi41IDIxLjg5ODQzOCAxNi44MDA3ODEgMjEuODk4NDM4IDE3LjgwMDc4MSBDIDIxLjg5ODQzOCAxOC44MDA3ODEgMjEuODk4NDM4IDIwLjE5OTIxOSAyMS44OTg0MzggMjAuNSBDIDIxLjg5ODQzOCAyMC44MDA3ODEgMjEuODk4NDM4IDIwLjgwMDc4MSAyMS44MDA3ODEgMjEgQyAyMS42OTkyMTkgMjEuMTk5MjE5IDIxLjYwMTU2MyAyMS42OTkyMTkgMjEuNjAxNTYzIDIxLjY5OTIxOSBDIDIxLjYwMTU2MyAyMS44MDA3ODEgMjEuMTAxNTYzIDIyIDIwLjgwMDc4MSAyMiBDIDIwLjUgMjIgMTkuMzk4NDM4IDIyIDE4LjY5OTIxOSAyMS44OTg0MzggQyAxOCAyMS44MDA3ODEgMTYuMTAxNTYzIDIxLjM5ODQzOCAxNS4zOTg0MzggMjEuMTAxNTYzIEMgMTQuNjk5MjE5IDIwLjg5ODQzOCAxMi4zOTg0MzggMjAuMTAxNTYzIDkuNjAxNTYzIDE4IEMgNyAxNiA1LjEwMTU2MyAxMy4zMDA3ODEgNCAxMS4xMDE1NjMgQyAyLjg5ODQzOCA4Ljg5ODQzOCAyLjMwMDc4MSA2LjUgMi4xOTkyMTkgNS4zMDA3ODEgQyAyIDQuMTAxNTYzIDIgMy42MDE1NjMgMiAzLjMwMDc4MSBDIDIuMTAxNTYzIDMgMi4zOTg0MzggMi42OTkyMTkgMi42MDE1NjMgMi42MDE1NjMgQyAyLjgwMDc4MSAyLjUgMy4xMDE1NjMgMi4zOTg0MzggMy4zOTg0MzggMi4zOTg0MzggQyAzLjY5OTIxOSAyLjM5ODQzOCA0LjUgMi4zOTg0MzggNS42MDE1NjMgMi4zOTg0MzggQyA2LjY5OTIxOSAyLjM5ODQzOCA4IDIuMzk4NDM4IDggMi4zOTg0MzggWiAiPjwvcGF0aD48L2c+PC9zdmc+' />
+                         <p>### - ####</p></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class='bottom'>
+            <div class='leftCol'>
+                <div class='experience'>
+
+                    <h2 class='sectionHeader'>Work Experience</h2>
+
+                    <h2 class='title'>ESL Teacher</h2>
+
+                    <h3 class= 'company'>VIPKID</h3>
+                    <div class='dateLocation'>
+                        <p>05/2017 - Present</p>
+                        <p>VIPKID.com</p>  
+                    </div>
+                    <ul>
+                        <li>Educated Chinese students aged 4 - 12 in English</li>
+                    </ul>
+                    
+                    <h3 class= 'company'>Head Start</h3>
+                    <div class='dateLocation'>
+                            <p>07/2015 - 07/2017</p>
+                            <p>Taipei, Taiwan</p>  
+                    </div>
+                    <ul>
+                        <li>Taught English to Taiwanese children aged 6 - 12</li>
+                    </ul>
+
+                    <h2 class='title'>Digital Marketing Director</h2>
+                    <h3 class= 'company'>National Pain Care</h3>
+                    <div class='dateLocation'>
+                            <p>06/2014 - 06/2015</p>
+                            <p>Taipei, Taiwan</p>  
+                    </div>
+                    <ul>
+                        <li>Directed the marketing and development of 22 websites for National Pain Care ranging from a corporate informational website to targeted local microsites.</li>
+                        <li>Analyzed business goals and provided direction for development team to complete critical tasks.</li>
+                        <li>Provided performance metrics and guidance on marketing budgets.</li>
+                    </ul>
+
+                    <h2 class='title'>Chief Information Officer</h2>
+                    <h3 class= 'company'>National Pain Care</h3>
+                    <div class='dateLocation'>
+                            <p>08/2011 - 06/2014</p>
+                            <p>Atlanta, GA</p>  
+                    </div>
+                    <ul>
+                        <li>Organized and directed all IT projects for 270+ employee corporation</li>
+                        <ul>
+                            <li>Developed internal IT team of 3 field technicians, a system administrator, a project manager, and a network administrator</li>
+                            <li>Coordinated overhaul of the web presence</li>
+                            <li>Evaluated legacy systems of acquisition targets for upgrade, redesign, and integration</li>
+                            <li>Total overhaul of network, server, and client design in accordance with HIPAA laws</li>
+                            <li>Administered and supported Windows XP, 7, 8, Server 2003, Server 2008, Active Directory Greenway's PrimeSuite and the MS Office Suite</li>
+                        </ul>
+                        <li>Marketing Director</li>
+                        <ul>
+                            <li>Directed strategy and production of digital advertising for National Pain Care as well as radio and TV advertisements for Georgia Pain Physicians</li>
+                        </ul>
+                        <li>Practice Manager</li>
+                        <ul>    
+                            <li>Supervised 40+ staff over 4 locations</li>
+                            <li>Handled patient disputes</li>
+                            <li>Trained staff in EHR use</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div class='rightCol'>
+                
+
+                <h2 class='sectionHeader'>Skills</h2>
+                <div class='skills'>
+                    <p>Web Development</p>
+                    <p>Mandarin Chinese</p>
+                    <p>Project Management</p>
+                    <p>Electronic Health Records</p>
+                    <p>Microsoft Office</p>
+                    <p>Marketing</p>
+
+                </div>
+                
+                
+                <h2 class='sectionHeader'>Soft Skills</h2>
+                <div class='softSkills'>
+                    <p>Leadership</p>
+                    <p>Client Service</p>
+                    <p>Delegation</p>
+                    <p>Organization</p>
+                    <p>Planning</p>
+                    <p>Strategy</p>
+                    <p>Public Speaking</p>
+                    <p>Conflict Resolution</p>
+                    <p>Problem Solving</p>
+                </div>
+
+                
+                <h2 class='sectionHeader'>Education</h2>
+                <div class='education'>
+                    <div class='educationItem'>
+                        <h3>B.B.A. in Management Information Systems</h3>
+                        <h3>University of Georgia, Terry College of Business</h3>
+                        <div class='dateLocation'>
+                                <p>08/2006 - 05/2011</p>
+                                <p>Athens, GA</p>  
+                        </div>
+                    </div>
+                    <div class='educationItem'>
+                        <h3>CEFR B2 in Mandarin Reading and Listening</h3>
+                        <h3>National Taiwan University, Mandarin Training Center</h3>
+                        <div class='dateLocation'>
+                                <p>08/2014 - 11/2017</p>
+                                <p>Taipei, Taiwan</p>  
+                        </div>
+                    </div>
+                    <div class='educationItem'>
+                        <h3>Globalization and IT</h3>
+                        <h3>Neusoft Institute of Information</h3>
+                        <div class='dateLocation'>
+                                <p>06/2010</p>
+                                <p>Dalian, China</p>  
+                        </div>
+                    </div>
+                    <div class='educationItem'>
+                        <h3>Chinese Immersion Program</h3>
+                        <h3>Jilin University</h3>
+                        <div class='dateLocation'>
+                                <p>06/2008 - 08/2008</p>
+                                <p>Changchun, China</p>  
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+</body>
+</html>
